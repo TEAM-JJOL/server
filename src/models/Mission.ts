@@ -12,6 +12,11 @@ const MissionSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    isConfirmed: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   { timestamps: { createdAt: 'date' } },
 );
