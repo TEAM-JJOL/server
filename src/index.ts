@@ -4,11 +4,14 @@ const app = express();
 import connectDB from './loaders/db';
 import routes from './routes';
 require('dotenv').config();
+const cors = require('cors');
 
 connectDB();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(cors())
 
 app.use(routes); //라우터
 
