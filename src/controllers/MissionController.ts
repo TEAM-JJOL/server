@@ -33,7 +33,7 @@ const createMission = async (req: Request, res: Response) => {
 const getMissionList = async (req: Request, res: Response) => {
     const error = validationResult(req);
     if (!error.isEmpty()) {
-        return res.status(statusCode.BAD_REQUEST).send(util.fail(statusCode.BAD_REQUEST, message.BAD_REQUEST));
+        return res.status(statusCode.BAD_REQUEST).send(util.fail(statusCode.BAD_REQUEST, message.NULL_VALUE));
     }
 
     const { id } = req.params;
@@ -50,7 +50,7 @@ const getMissionList = async (req: Request, res: Response) => {
 const getConfirmedMissionList = async (req: Request, res: Response) => {
     const error = validationResult(req);
     if (!error.isEmpty()) {
-        return res.status(statusCode.BAD_REQUEST).send(util.fail(statusCode.BAD_REQUEST, message.BAD_REQUEST));
+        return res.status(statusCode.BAD_REQUEST).send(util.fail(statusCode.BAD_REQUEST, message.NULL_VALUE));
     }
 
     const { id } = req.params;
