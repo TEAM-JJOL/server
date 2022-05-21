@@ -1,20 +1,19 @@
 import { Router } from 'express';
+import { MissionController } from '../controllers';
 import { body, param } from 'express-validator/check';
-import MissionController from '../controllers/MissionController';
 
 const router: Router = Router();
 
-router.post('/', [
-    body('ownerId').isEmpty(),
-    body('content').isEmpty()
-], MissionController.createMission)
+router.post(
+  '/',
+  [body('ownerId').isEmpty(), body('content').isEmpty()],
+  MissionController.createMission,
+);
 
-router.get('/:id', [
-    param('id').notEmpty()
-], MissionController.getMissionList)
+router.post('/confirm', MissionController.confirmMission);
 
-router.get('/:id/confirmed', [
-    param('id').notEmpty()
-], MissionController.getConfirmedMissionList)
+router.get('/:id', [param('id').notEmpty()], MissionController.getMissionList);
+
+router.get('/:id/confirmed', [param('id').notEmpty()], MissionController.getConfirmedMissionList);
 
 export default router;

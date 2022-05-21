@@ -1,4 +1,3 @@
-import { PostBaseResponseDto } from '../interfaces/common/PostBaseResponseDto';
 import { UserCreateDto } from '../interfaces/user/UserCreateDto';
 import { UserResponseDto } from '../interfaces/user/UserResponseDto';
 import User from '../models/User';
