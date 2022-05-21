@@ -18,7 +18,7 @@ const MissionSchema = new mongoose.Schema(
       default: false,
     },
   },
-  { timestamps: { createdAt: 'date' } },
+  { timestamps: { createdAt: 'date' }, versionKey: false },
 );
 
 export default mongoose.model<MissionInfo & mongoose.Document>('Mission', MissionSchema);

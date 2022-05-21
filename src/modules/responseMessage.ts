@@ -11,6 +11,11 @@ const message = {
   // 유저 관련
   CREATE_LINK_SUCCESS: '링크 생성 성공',
   READ_USER_SUCCESS: '유저 조회 성공',
+
+  // 미션 관련
+  CREATE_MISSION_SUCCESS: '미션 생성 성공',
+  READ_MISSION_SUCCESS: '미션 조회 성공',
+  READ_CONFIRMED_MISSION_SUCCESS: '수락한 미션 조회 성공'
 };
 
 export default message;
