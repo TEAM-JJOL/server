@@ -13,8 +13,10 @@ const message = {
   READ_USER_SUCCESS: '유저 조회 성공',
   INVALID_PASSWORD: '패스워드 틀림',
   DIFFERENT_USER: '다른 유저로 접속 시도',
-
   // 미션 관련
+  CREATE_MISSION_SUCCESS: '미션 생성 성공',
+  READ_MISSION_SUCCESS: '미션 조회 성공',
+  READ_CONFIRMED_MISSION_SUCCESS: '수락한 미션 조회 성공',
   MISSION_CONFIRM_SUCCESS: '모든 가보자고 완료',
 };
 
