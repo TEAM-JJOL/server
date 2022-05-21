@@ -11,6 +11,11 @@ const message = {
   // 유저 관련
   CREATE_LINK_SUCCESS: '링크 생성 성공',
   READ_USER_SUCCESS: '유저 조회 성공',
+  INVALID_PASSWORD: '패스워드 틀림',
+  DIFFERENT_USER: '다른 유저로 접속 시도',
+
+  // 미션 관련
+  MISSION_CONFIRM_SUCCESS: '모든 가보자고 완료',
 };
 
 export default message;

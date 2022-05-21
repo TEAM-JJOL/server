@@ -1,3 +1,4 @@
 import UserController from './UserController';
+import MissionController from './MissionController';
 
-export { UserController };
+export { UserController, MissionController };
