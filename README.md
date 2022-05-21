@@ -143,3 +143,45 @@ Git Flow 방식
         </td>
     </tr>
 </table>
+
+
+### Collection
+
+```
+const MissionSchema = new mongoose.Schema(
+  {
+    ownerId: {
+      type: mongoose.Types.ObjectId,
+      required: true,
+      ref: 'User',
+    },
+    content: {
+      type: String,
+      required: true,
+    },
+    isConfirmed: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
+  },
+  { timestamps: { createdAt: 'date' }, versionKey: false },
+);
+```
+
+```
+const UserSchema = new mongoose.Schema({
+  nickname: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+});
+```
+
+### Server Architecture
+
+![image](https://user-images.githubusercontent.com/51692363/169669724-036bdb07-6f3b-4ba5-9f16-fc467cef77a2.png)
