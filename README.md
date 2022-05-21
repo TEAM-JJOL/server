@@ -6,6 +6,10 @@
 
 친구에게 색다른 **내일**을 선사해보세요
 
+### API
+명세서: <a href="https://iridescent-telephone-0f2.notion.site/API-9b890d37cb74461f90b8820ed3a30b7d
+">확인하기</a>
+
 ### 기술 스택
 
 ![MongoDB](https://img.shields.io/badge/-mongoDB-40b33d?labelColor=white&logo=MongoDB)
