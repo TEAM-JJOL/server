@@ -13,7 +13,7 @@ const MissionSchema = new mongoose.Schema(
       required: true,
     },
   },
-  { timestamps: true },
+  { timestamps: { createdAt: 'date' } },
 );
 
 export default mongoose.model<MissionInfo & mongoose.Document>('Mission', MissionSchema);
