@@ -4,11 +4,10 @@ import { body, param } from 'express-validator/check';
 
 const router: Router = Router();
 
-router.post(
-  '/',
-  [body('ownerId').isEmpty(), body('content').isEmpty()],
-  MissionController.createMission,
-);
+router.post('/', [
+    body('ownerId').notEmpty(),
+    body('content').notEmpty()
+], MissionController.createMission)
 
 router.post('/confirm', MissionController.confirmMission);
 
